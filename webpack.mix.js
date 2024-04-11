@@ -347,7 +347,7 @@ mix.copy('resources/assets/vendor/bootstrap-fileinput/js/locales', 'public/asset
 /**
  * For production, mix will generate a version number for each compilation to load the new js and css
  * easily on the browser. The version along with the file location will be stored under
- * public/mix-manifest.json file. Version will be generated when you run the minification as `npm run prod`
+ * public/mix-manifest.json file. Version will be generated when you run the minification as `npm run build`
  */
 if (mix.inProduction()) {
     mix.version();
@@ -356,7 +356,7 @@ if (mix.inProduction()) {
 /**
  * BrowserSync will automatically monitor your files for changes, and insert your changes into
  * the browser - all without requiring a manual refresh. This is for development purpose.
- * Now, boot up the dev server in your local, run: `npm run watch`
+ * Now, boot up the dev server in your local, run: `npm run dev`
  */
 mix.browserSync({
     files: [
